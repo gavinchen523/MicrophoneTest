@@ -86,8 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void startRecording() {
         mRecorder = new MediaRecorder();
-        //mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
-        mRecorder.setAudioSource(AudioManager.GET_DEVICES_INPUTS.);
+        mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
         mRecorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
         mRecorder.setOutputFile(mFileName);
         mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
@@ -183,6 +182,29 @@ public class MainActivity extends AppCompatActivity {
                         ViewGroup.LayoutParams.WRAP_CONTENT,
                         0));
         setContentView(ll);
+//        setContentView(R.layout.activity_main);
+
+        /*
+
+        mRecord = (Button) findViewById(R.id.record_button);
+        mPlay = (Button) findViewById(R.id.play_button);
+        mMicSelect = (ListView) findViewById(R.id.mic_list);
+        mSpkSelect = (ListView) findViewById(R.id.speak_list);
+
+        mRecord.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        mPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+*/
 
     }
 
