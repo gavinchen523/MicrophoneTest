@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MicrophoneTest</string>
+    <string name="select_mic">Select Micphone</string>
+    <string name="select_spk">Select Speaker</string>
+    <string name="sent_cmd">Send Command</string>
+    <string name="cmd_list">Command List</string>
+    <string name="reord_text">Record</string>
+    <string name="play_text">Play</string>
+</resources>
